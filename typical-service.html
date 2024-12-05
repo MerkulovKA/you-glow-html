@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&family=Montserrat+Alternates:wght@600;700&display=swap">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    
+    
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+
+            <title>Главная страница</title>
+                <link href="./css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+<body>
+<img src="/images/page__background.svg" alt="" style="z-index: -1; position: fixed; bottom: 0; left: 0; right: 0; width: 100%; height: 100%;">
+
+<header id="main-header" class="header">
+    <div class="container">
+        <div class="header__row">
+            <div class="header__logotype">
+                <a href="#">
+                    <picture>
+                        <source srcset="/images/logotype--mobile.svg" media="(max-width: 1199px)">
+                        <img src="/images/logotype.svg" alt="" width="75" height="115" class="header__logotype-item">
+                    </picture>
+
+                </a>
+            </div>
+            <div class="header__content">
+                <div class="header__row header__secondary">
+                    <div class="header__info">
+                        <div class="header__info-item">
+                            <svg>
+                                <use xlink:href="/images/icons.svg#location"></use>
+                            </svg>
+                            Екатеринбург, ул.Проезд Решетникова 22а, Оф. 205А
+                        </div>
+                        <div class="header__info-item">
+                            <svg>
+                                <use xlink:href="/images/icons.svg#clock"></use>
+                            </svg>
+                            Режим работы: пн – вс с 9:00 до 21:00
+                        </div>
+                    </div>
+                    <div class="header__actions">
+                        <a href="tel:+79632702379" class="header__phone">
+                            +7 (963) 270-23-79
+                        </a>
+                        <button data-fancybox data-src="#modal-feedback" class="header__feedback">
+                            Заказать звонок
+                        </button>
+                    </div>
+                    <div class="header__socials">
+                                                    <a href="#" class="header__socials-item">
+                                <svg>
+                                    <use xlink:href="/images/icons.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                                                    <a href="#" class="header__socials-item">
+                                <svg>
+                                    <use xlink:href="/images/icons.svg#vk"></use>
+                                </svg>
+                            </a>
+                                                    <a href="#" class="header__socials-item">
+                                <svg>
+                                    <use xlink:href="/images/icons.svg#telegram"></use>
+                                </svg>
+                            </a>
+                                            </div>
+                </div>
+                <div class="header__main header__row">
+                    <button id="desktop-menu-button" class="header__button-menu">
+                        <span class="burger">
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                        </span>
+                        <span>
+                            Каталог услуг
+                        </span>
+                    </button>
+                    <div class="header__menu">
+                                                    <a href="#" class="header__menu-item">
+                                О компании
+                            </a>
+                                                    <a href="#" class="header__menu-item">
+                                Цены
+                            </a>
+                                                    <a href="#" class="header__menu-item">
+                                Акции
+                            </a>
+                                                    <a href="#" class="header__menu-item">
+                                До и после
+                            </a>
+                                                    <a href="#" class="header__menu-item">
+                                Блог
+                            </a>
+                                                    <a href="#" class="header__menu-item">
+                                Отзывы
+                            </a>
+                                                    <a href="#" class="header__menu-item">
+                                Контакты
+                            </a>
+                                            </div>
+                </div>
+            </div>
+            <div class="header__mobile">
+                <a href="tel:#" class="header__mobile-phone">
+                    <svg>
+                        <use xlink:href="/images/icons.svg#phone"></use>
+                    </svg>
+                </a>
+                <button id="mobile-menu-button" class="header__mobile-menu-button">
+                <span class="burger">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>    <main style="display: grid; gap: 20px;">
+        <div class="component-header-page">
+    <div class="container">
+        <div class="component-header-page__container">
+            <div class="component-header-page__background">
+                <img src="/images/component-header-page__background.png" alt="">
+            </div>
+            <div class="component-header-page__content">
+                
+<nav class="breadcrumbs">
+    <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                <a href="/" class="breadcrumbs__link ">
+                        <span>
+                            Главная
+                        </span>
+                </a>
+            </li>
+                    <li class="breadcrumbs__item">
+                <a href="/" class="breadcrumbs__link active">
+                        <span>
+                            Хлебные крошки
+                        </span>
+                </a>
+            </li>
+            </ol>
+</nav>                <h1 class="h1">
+                    Аппаратная косметология
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>        <div class="component-slider">
+    <div class="container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="component-slider__slide">
+                        <img src="/images/articles.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="component-slider__slide">
+                        <img src="/images/banner.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <button class="component-slider__navigation component-slider__navigation--prev">
+                <svg>
+                    <use xlink:href="/images/icons.svg#arrow-left"></use>
+                </svg>
+            </button>
+            <button class="component-slider__navigation component-slider__navigation--next">
+                <svg>
+                    <use xlink:href="/images/icons.svg#arrow-right"></use>
+                </svg>
+            </button>
+            <div class="component-slider__pagination"></div>
+        </div>
+    </div>
+</div>        <div class="container">
+            <div class="service-info">
+                <div class="service-info__price">
+                    От 2 000 ₽
+                </div>
+                <div class="service-info__information-list">
+                    <div class="service-info__information">
+                        <svg>
+                            <use xlink:href="/images/icons.svg#time"></use>
+                        </svg>
+                        от 45 мин
+                    </div>
+                    <div class="service-info__information" data-tooltip data-tooltip-title="Противопоказания:"
+                    data-tooltip-text="Как отмечает Теодор Адорно, напряжение сжимает почвообразующий райдер. Мнимотакт, по определению, традиционен. Конечно, нельзя не принять во внимание тот факт, что почвообразовательный процесс продолжает бугор пучения. Гармонический интервал нейтрализует ореховатый полиряд.">
+                        <svg>
+                            <use xlink:href="/images/icons.svg#time"></use>
+                        </svg>
+                        Нет противопоказаний
+                    </div>
+                    <div class="service-info__information">
+                        <svg>
+                            <use xlink:href="/images/icons.svg#time"></use>
+                        </svg>
+                        Результат с 1 процедуры
+                    </div>
+                </div>
+                <a href="" class="btn btn--main">
+                    Заказать звонок
+                    <svg>
+                        <use xlink:href="/images/icons.svg#arrow-right"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <section class="component-prices">
+    <div class="container">
+        <h2 class="h2">
+            Аппаратный массаж бмс
+        </h2>
+        <div class="component-prices__list">
+                            <article class="component-prices__card">
+                    <div class="component-prices__card-content">
+                        <div class="row middle-md">
+                            <div class="col-xs-12 col-md-6 col-lg-7">
+                                <div class="component-prices__card-header">
+                                    <div class="component-prices__card-title">
+                                        Вакуумный массаж 3-х зон
+                                    </div>
+                                    <div class="component-prices__card-labels">
+                                    <span class="component-prices__card-label component-prices__card-label--fill">
+                                        Абонемент
+                                    </span>
+                                        <span class="component-prices__card-label">
+                                        Комплекс
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="component-prices__card-description">
+                                    Лазерная эпиляция (Бикини+Голени+Подмышки) для новых клиентов до 31 октября
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-lg-5 border-md">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <div class="component-prices__card-information">
+                                <span>
+                                    1 процедура
+                                </span>
+                                            <span>
+                                    <svg>
+                                        <use xlink:href="/images/icons.svg#time"></use>
+                                    </svg>
+                                    45 минут
+                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 border-sm">
+                                        <div class="row middle-sm">
+                                            <div class="col-xs-12 col-sm-6">
+                                                <div class="component-prices__card-price component-prices__card-price--old">
+                                                    3160руб
+                                                </div>
+                                                <div class="component-prices__card-price">
+                                                    2160руб
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <a href="" class="btn btn--main btn--outline">
+                                                    Записаться
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                            <article class="component-prices__card">
+                    <div class="component-prices__card-content">
+                        <div class="row middle-md">
+                            <div class="col-xs-12 col-md-6 col-lg-7">
+                                <div class="component-prices__card-header">
+                                    <div class="component-prices__card-title">
+                                        Вакуумный массаж 3-х зон
+                                    </div>
+                                    <div class="component-prices__card-labels">
+                                    <span class="component-prices__card-label component-prices__card-label--fill">
+                                        Абонемент
+                                    </span>
+                                        <span class="component-prices__card-label">
+                                        Комплекс
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="component-prices__card-description">
+                                    Лазерная эпиляция (Бикини+Голени+Подмышки) для новых клиентов до 31 октября
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-lg-5 border-md">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <div class="component-prices__card-information">
+                                <span>
+                                    1 процедура
+                                </span>
+                                            <span>
+                                    <svg>
+                                        <use xlink:href="/images/icons.svg#time"></use>
+                                    </svg>
+                                    45 минут
+                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 border-sm">
+                                        <div class="row middle-sm">
+                                            <div class="col-xs-12 col-sm-6">
+                                                <div class="component-prices__card-price component-prices__card-price--old">
+                                                    3160руб
+                                                </div>
+                                                <div class="component-prices__card-price">
+                                                    2160руб
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <a href="" class="btn btn--main btn--outline">
+                                                    Записаться
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                            <article class="component-prices__card">
+                    <div class="component-prices__card-content">
+                        <div class="row middle-md">
+                            <div class="col-xs-12 col-md-6 col-lg-7">
+                                <div class="component-prices__card-header">
+                                    <div class="component-prices__card-title">
+                                        Вакуумный массаж 3-х зон
+                                    </div>
+                                    <div class="component-prices__card-labels">
+                                    <span class="component-prices__card-label component-prices__card-label--fill">
+                                        Абонемент
+                                    </span>
+                                        <span class="component-prices__card-label">
+                                        Комплекс
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="component-prices__card-description">
+                                    Лазерная эпиляция (Бикини+Голени+Подмышки) для новых клиентов до 31 октября
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-lg-5 border-md">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <div class="component-prices__card-information">
+                                <span>
+                                    1 процедура
+                                </span>
+                                            <span>
+                                    <svg>
+                                        <use xlink:href="/images/icons.svg#time"></use>
+                                    </svg>
+                                    45 минут
+                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 border-sm">
+                                        <div class="row middle-sm">
+                                            <div class="col-xs-12 col-sm-6">
+                                                <div class="component-prices__card-price component-prices__card-price--old">
+                                                    3160руб
+                                                </div>
+                                                <div class="component-prices__card-price">
+                                                    2160руб
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <a href="" class="btn btn--main btn--outline">
+                                                    Записаться
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                            <article class="component-prices__card">
+                    <div class="component-prices__card-content">
+                        <div class="row middle-md">
+                            <div class="col-xs-12 col-md-6 col-lg-7">
+                                <div class="component-prices__card-header">
+                                    <div class="component-prices__card-title">
+                                        Вакуумный массаж 3-х зон
+                                    </div>
+                                    <div class="component-prices__card-labels">
+                                    <span class="component-prices__card-label component-prices__card-label--fill">
+                                        Абонемент
+                                    </span>
+                                        <span class="component-prices__card-label">
+                                        Комплекс
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="component-prices__card-description">
+                                    Лазерная эпиляция (Бикини+Голени+Подмышки) для новых клиентов до 31 октября
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-lg-5 border-md">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <div class="component-prices__card-information">
+                                <span>
+                                    1 процедура
+                                </span>
+                                            <span>
+                                    <svg>
+                                        <use xlink:href="/images/icons.svg#time"></use>
+                                    </svg>
+                                    45 минут
+                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 border-sm">
+                                        <div class="row middle-sm">
+                                            <div class="col-xs-12 col-sm-6">
+                                                <div class="component-prices__card-price component-prices__card-price--old">
+                                                    3160руб
+                                                </div>
+                                                <div class="component-prices__card-price">
+                                                    2160руб
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <a href="" class="btn btn--main btn--outline">
+                                                    Записаться
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                    </div>
+    </div>
+</section>    </main>
+
+
+
+<footer class="footer">
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="footer__information">
+                            <a href="" class="footer__logotype">
+                                <img src="/images/logotype.svg" alt="" width="114" height="160"
+                                     class="footer__logotype-image">
+                            </a>
+                            <div class="footer__contacts">
+                                <a href="tel:+79632702379" class="footer__contacts-phone">
+                                    +7 (963) 270-23-79
+                                </a>
+                                <p>
+                                    г.Екатеринбург,
+                                    ул. Данилы Зверева 23/1
+                                </p>
+                                <p>
+                                    Работаем с 9:00 до 22:00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer__person">
+                            <p>
+                                Самозанятая Василиса Прекрасная
+                            </p>
+                            <p>
+                                ИНН: 667351403006
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="row">
+                                                    <div class="col-xs-12 col-sm-6">
+                                <div class="footer__category">
+                                    <a href="#" class="footer__category-link">
+                                        Аппаратная косметология
+                                    </a>
+                                    <ul class="footer__category-list ul">
+                                                                                    <li>
+                                                <a href="#" class="footer__category-sublink">
+                                                    Вакуумный массаж
+                                                </a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="#" class="footer__category-sublink">
+                                                    Вибромассаж
+                                                </a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="#" class="footer__category-sublink">
+                                                    Прессотерапия
+                                                </a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="#" class="footer__category-sublink">
+                                                    Кавитация
+                                                </a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="#" class="footer__category-sublink">
+                                                    Rf лифтинг
+                                                </a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="#" class="footer__category-sublink">
+                                                    Микротоки
+                                                </a>
+                                            </li>
+                                                                            </ul>
+                                </div>
+                            </div>
+                                                    <div class="col-xs-12 col-sm-6">
+                                <div class="footer__category">
+                                    <a href="#" class="footer__category-link">
+                                        Массаж лица
+                                    </a>
+                                    <ul class="footer__category-list ul">
+                                                                                    <li>
+                                                <a href="#" class="footer__category-sublink">
+                                                    Аппаратный массаж бмс
+                                                </a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="#" class="footer__category-sublink">
+                                                    Миофасциальный массаж
+                                                </a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="#" class="footer__category-sublink">
+                                                    Комплекс ручной+бмс
+                                                </a>
+                                            </li>
+                                                                                    <li>
+                                                <a href="#" class="footer__category-sublink">
+                                                    Ручной массаж
+                                                </a>
+                                            </li>
+                                                                            </ul>
+                                </div>
+                            </div>
+                                                    <div class="col-xs-12 col-sm-6">
+                                <div class="footer__category">
+                                    <a href="#" class="footer__category-link">
+                                        Лазерная эпиляция
+                                    </a>
+                                    <ul class="footer__category-list ul">
+                                                                            </ul>
+                                </div>
+                            </div>
+                                            </div>
+
+                </div>
+                <div class="col-xs-12 col-md-2">
+                                            <div class="footer__category">
+                            <a href="#" class="footer__category-link">
+                                О компании
+                            </a>
+                        </div>
+                                            <div class="footer__category">
+                            <a href="#" class="footer__category-link">
+                                Цены
+                            </a>
+                        </div>
+                                            <div class="footer__category">
+                            <a href="#" class="footer__category-link">
+                                Акции
+                            </a>
+                        </div>
+                                            <div class="footer__category">
+                            <a href="#" class="footer__category-link">
+                                До и после
+                            </a>
+                        </div>
+                                            <div class="footer__category">
+                            <a href="#" class="footer__category-link">
+                                Блог
+                            </a>
+                        </div>
+                                            <div class="footer__category">
+                            <a href="#" class="footer__category-link">
+                                Отзывы
+                            </a>
+                        </div>
+                                            <div class="footer__category">
+                            <a href="#" class="footer__category-link">
+                                Контакты
+                            </a>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-secondary">
+        <div class="container">
+            <div class="footer-secondary__row">
+                <p>
+                    2024 Все права защищены
+                </p>
+                <a href="" class="footer-secondary__link">
+                    Политика обработки персональных данных
+                </a>
+                <div>
+                    Сделано в
+                    <a href="" class="footer-secondary__link footer-secondary__link--bold">
+                        Маркс & Энгельс
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu__container">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__category-dropdown">
+                <a href="#" class="mobile-menu__category-dropdown-trigger">
+                    Продукция
+                </a>
+                <ul>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Блок-контейнеры
+                            </a>
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Сантехнические контейнеры
+                            </a>
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Бытовки
+                            </a>
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Торговые блок-контейнеры
+                            </a>
+                        </li>
+                                            <li class="mobile-menu__subcategory-dropdown">
+                            <a href="#" class="mobile-menu__subcategory-dropdown-trigger">
+                                Благоустройство
+                            </a>
+                        </li>
+                                    </ul>
+            </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        О компании
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Услуги
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Наши работы
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Доставка и оплата
+                    </a>
+                </li>
+                            <li>
+                    <a href="#" class="mobile-menu__main-link">
+                        Контакты
+                    </a>
+                </li>
+                    </ul>
+        <div class="mobile-menu__footer">
+            <a href="tel:+79632702379" class="mobile-menu__footer-link">
+                +7 (963) 270-23-79
+            </a>
+            <button class="button button--medium button--primary button--outline">
+                Заказать звонок
+            </button>
+            <div class="mobile-menu__social-list">
+                                    <a href="#" class="mobile-menu__social-list-item">
+                        <svg>
+                            <use xlink:href="/images/icons.svg#whatsapp"></use>
+                        </svg>
+                    </a>
+                                    <a href="#" class="mobile-menu__social-list-item">
+                        <svg>
+                            <use xlink:href="/images/icons.svg#vk"></use>
+                        </svg>
+                    </a>
+                                    <a href="#" class="mobile-menu__social-list-item">
+                        <svg>
+                            <use xlink:href="/images/icons.svg#telegram"></use>
+                        </svg>
+                    </a>
+                            </div>
+        </div>
+    </div>
+</div><section id="desktop-menu" class="desktop-menu">
+    <h2 class="sr-only">
+        Меню
+    </h2>
+    <div class="container">
+        <div class="desktop-menu__container">
+                            <article class="desktop-menu__card">
+                    <picture>
+                        <img src="/images/hardware-cosmetology.png" alt="" class="desktop-menu__card-image">
+                    </picture>
+                    <div class="desktop-menu__card-content">
+                        <a href="#" class="desktop-menu__card-link">
+                            Аппаратная косметология
+                        </a>
+                        <ul class="desktop-menu__card-list ul">
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Вакуумный массаж
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Вибромассаж
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Прессотерапия
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Кавитация
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Rf лифтинг
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Микротоки
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </article>
+                            <article class="desktop-menu__card">
+                    <picture>
+                        <img src="/images/facial-massage.png" alt="" class="desktop-menu__card-image">
+                    </picture>
+                    <div class="desktop-menu__card-content">
+                        <a href="#" class="desktop-menu__card-link">
+                            Массаж лица
+                        </a>
+                        <ul class="desktop-menu__card-list ul">
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Аппаратный массаж бмс
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Миофасциальный массаж
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Комплекс ручной+бмс
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Ручной массаж
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </article>
+                            <article class="desktop-menu__card">
+                    <picture>
+                        <img src="/images/laser-hair-removal.png" alt="" class="desktop-menu__card-image">
+                    </picture>
+                    <div class="desktop-menu__card-content">
+                        <a href="#" class="desktop-menu__card-link">
+                            Лазерная эпиляция
+                        </a>
+                        <ul class="desktop-menu__card-list ul">
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Комплексная эпиляция
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Женщинам, по зонам
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Мужчинам, по зонам
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </article>
+                            <article class="desktop-menu__card">
+                    <picture>
+                        <img src="/images/massage-training.png" alt="" class="desktop-menu__card-image">
+                    </picture>
+                    <div class="desktop-menu__card-content">
+                        <a href="#" class="desktop-menu__card-link">
+                            Обучение массажу
+                        </a>
+                        <ul class="desktop-menu__card-list ul">
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Обучение аппаратному бмс массажу
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Обучение ручному массажу
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Обучение массажу лица
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </article>
+                            <article class="desktop-menu__card">
+                    <picture>
+                        <img src="/images/comprehensive.png" alt="" class="desktop-menu__card-image">
+                    </picture>
+                    <div class="desktop-menu__card-content">
+                        <a href="#" class="desktop-menu__card-link">
+                            Комплексные
+                        </a>
+                        <ul class="desktop-menu__card-list ul">
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Аппаратный бмс массаж
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Ручной массаж
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="#" class="desktop-menu__card-list-link">
+                                        Мужчинам, по зонам
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </article>
+                    </div>
+    </div>
+</section>
+<div id="shadow-for-menu" role="button" tabindex="0" aria-label="Закрыть" class="shadow-for-menu"></div><div id="modal-feedback" class="modal-feedback" style="display: none; max-width: 712px;">
+    <div class="modal-feedback__header">
+        <img src="/images/modal-feedback__header.png" alt="">
+    </div>
+    <div class="modal-feedback__content">
+        <h2 class="h2 modal-feedback__title">
+            Заказать звонок
+        </h2>
+        <p class="modal-feedback__description">
+            Оставьте заявку и наш специалист обязательно свяжется с вами в ближайшее время!
+        </p>
+        <form class="modal-feedback__form">
+            <label class="component-input">
+            <span class="component-input__label">
+                Имя
+            </span>
+                <input type="text" placeholder="Василий" class="component-input__input">
+            </label>
+            <label class="component-input">
+                <span class="component-input__label">
+                    Телефон
+                </span>
+                <input type="text" placeholder="8 800 555 35 35" class="component-input__input">
+            </label>
+            <label class="component-textarea">
+                            <span class="component-textarea__label">
+                                Комментарий
+                            </span>
+                <textarea rows="4" placeholder="Напишите что-нибудь..."
+                          class="component-textarea__textarea"></textarea>
+            </label>
+            <div class="modal-feedback__actions">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <button class="btn btn--main">
+                            Оформить заказ
+                        </button>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="modal-feedback__accept">
+                            Нажимая на кнопку, Вы даёте свое согласие на обработку <a href="#">Персональных данных</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>    <script src="./js/accordion.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/steps.js"></script>
+
+</body>
+</html>
